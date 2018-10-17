@@ -37,7 +37,7 @@ class indexController
 
   function verCancionesPorDisco(){
     $discos = $this->discoModel->getDiscos();
-      $canciones = $this->cancionModel->getCanciones();
+    $canciones = $this->cancionModel->getCancionesPorDiscos();
     $this->view->mostrarCancionesPorDisco("Canciones por Disco", $canciones, $discos);
   }
 }

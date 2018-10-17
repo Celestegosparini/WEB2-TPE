@@ -1,5 +1,5 @@
 
-  {include file="header.tpl"}
+  {include file="header.tpl" seccion="login"}
 
   <h1 class="tituologin">{$Titulo}</h1>
 

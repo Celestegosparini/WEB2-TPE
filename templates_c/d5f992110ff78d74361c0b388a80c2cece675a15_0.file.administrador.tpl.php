@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-17 03:17:49
+/* Smarty version 3.1.33, created on 2018-10-17 16:04:01
   from 'C:\xampp\htdocs\WEB2-TPE\templates\administrador.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bc68dbd6a1390_17418274',
+  'unifunc' => 'content_5bc7415104b826_57303984',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd5f992110ff78d74361c0b388a80c2cece675a15' => 
     array (
       0 => 'C:\\xampp\\htdocs\\WEB2-TPE\\templates\\administrador.tpl',
-      1 => 1539739065,
+      1 => 1539785036,
       2 => 'file',
     ),
   ),
@@ -22,8 +22,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5bc68dbd6a1390_17418274 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_subTemplateRender("file:headerRegistrado.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+function content_5bc7415104b826_57303984 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender("file:headerRegistrado.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('seccion'=>"adminDisco"), 0, false);
 ?>
 
 

@@ -1,11 +1,15 @@
 
 {include file="header.tpl"}
+
 <div class="tablaCancion">
+
   <h1 class="tituloIndex">{$titulo}</h1>
    <table class="table table-dark">
     <thead>
    <tr>
     <th scope="col">Nombre</th>
+    <th scope="col">Duracion</th>
+    <th scope="col">Disco</th>
    </tr>
    </thead>
  <tbody>

@@ -13,16 +13,16 @@
   <body>
     <ul class="nav nav-pills nav-fill">
       <li class="nav-item">
-        <a class="nav-link {if $seccion=="canciones"}active{/if}" href="canciones">Canciones</a>
+        <a class="nav-link {if $seccion=="canciones"}active{/if}" href="./canciones">Canciones</a>
       </li>
       <li class="nav-item">
         <a class="nav-link {if $seccion=="discos"}active{/if}" href="./discos">Discos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./cancionesPorDisco">Canciones por Disco</a>
+        <a class="nav-link {if $seccion=="cancionesPorDisco"}active{/if}" href="./cancionesPorDisco">Canciones por Disco</a>
       </li>
   <li class="nav-item">
-    <a class="nav-link" href="./login">Ingresar</a>
+    <a class="nav-link {if $seccion=="login"}active{/if}" href="./login">Ingresar</a>
   </li>
 </div>
 

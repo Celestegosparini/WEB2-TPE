@@ -18,6 +18,11 @@ class cancionModel
       $sentencia->execute();
       return $sentencia->fetchAll(PDO::FETCH_ASSOC);
   }
+  function getCancionesPorDiscos(){
+      $sentencia = $this->db->prepare( "select * from cancion order by idDisco asc");
+      $sentencia->execute();
+      return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+  }
 
   function getCancionId($idCancion){
       $sentencia = $this->db->prepare( "select * from cancion where idCancion=?");

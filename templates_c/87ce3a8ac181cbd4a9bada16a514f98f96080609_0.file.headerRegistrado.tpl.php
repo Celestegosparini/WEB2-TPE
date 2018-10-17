@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-17 01:04:39
+/* Smarty version 3.1.33, created on 2018-10-17 21:54:20
   from 'C:\xampp\htdocs\WEB2-TPE\templates\headerRegistrado.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bc66e87915db1_97933623',
+  'unifunc' => 'content_5bc7936c998e70_51406082',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '87ce3a8ac181cbd4a9bada16a514f98f96080609' => 
     array (
       0 => 'C:\\xampp\\htdocs\\WEB2-TPE\\templates\\headerRegistrado.tpl',
-      1 => 1539731046,
+      1 => 1539792060,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bc66e87915db1_97933623 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bc7936c998e70_51406082 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
   <head>
@@ -38,10 +38,10 @@ function content_5bc66e87915db1_97933623 (Smarty_Internal_Template $_smarty_tpl)
     <div class="barraPrincipal">
     <ul class="nav nav-pills nav-fill">
   <li class="nav-item">
-    <a class="nav-link active" href="./administrador">Inicio</a>
+    <a class="nav-link <?php if ($_smarty_tpl->tpl_vars['seccion']->value == "adminDisco") {?>active<?php }?>" href="./adminDisco">Cargar Discos</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./administradorCanciones">Cargar Canciones</a>
+    <a class="nav-link <?php if ($_smarty_tpl->tpl_vars['seccion']->value == "adminCancion") {?>active<?php }?>" href="./adminCanciones">Cargar Canciones</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="./logout">Salir</a>

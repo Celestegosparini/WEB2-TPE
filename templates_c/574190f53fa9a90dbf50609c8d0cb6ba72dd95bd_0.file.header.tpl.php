@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-16 16:13:35
+/* Smarty version 3.1.33, created on 2018-10-17 15:58:04
   from 'C:\xampp\htdocs\WEB2-TPE\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bc5f20fbac858_80591338',
+  'unifunc' => 'content_5bc73fecd0f964_67997433',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '574190f53fa9a90dbf50609c8d0cb6ba72dd95bd' => 
     array (
       0 => 'C:\\xampp\\htdocs\\WEB2-TPE\\templates\\header.tpl',
-      1 => 1539699211,
+      1 => 1539784587,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bc5f20fbac858_80591338 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bc73fecd0f964_67997433 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
   <head>
@@ -35,19 +35,18 @@ function content_5bc5f20fbac858_80591338 (Smarty_Internal_Template $_smarty_tpl)
 
   </head>
   <body>
-    <div class="barraPrincipal">
     <ul class="nav nav-pills nav-fill">
       <li class="nav-item">
-        <a class="nav-link <?php if ($_smarty_tpl->tpl_vars['seccion']->value == "canciones") {?>active<?php }?>" href="canciones">Canciones</a>
+        <a class="nav-link <?php if ($_smarty_tpl->tpl_vars['seccion']->value == "canciones") {?>active<?php }?>" href="./canciones">Canciones</a>
       </li>
       <li class="nav-item">
         <a class="nav-link <?php if ($_smarty_tpl->tpl_vars['seccion']->value == "discos") {?>active<?php }?>" href="./discos">Discos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./cancionesPorDisco">Canciones por Disco</a>
+        <a class="nav-link <?php if ($_smarty_tpl->tpl_vars['seccion']->value == "cancionesPorDisco") {?>active<?php }?>" href="./cancionesPorDisco">Canciones por Disco</a>
       </li>
   <li class="nav-item">
-    <a class="nav-link" href="./login">Ingresar</a>
+    <a class="nav-link <?php if ($_smarty_tpl->tpl_vars['seccion']->value == "login") {?>active<?php }?>" href="./login">Ingresar</a>
   </li>
 </div>
 

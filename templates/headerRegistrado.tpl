@@ -14,10 +14,10 @@
     <div class="barraPrincipal">
     <ul class="nav nav-pills nav-fill">
   <li class="nav-item">
-    <a class="nav-link active" href="./administrador">Inicio</a>
+    <a class="nav-link {if $seccion=="adminDisco"}active{/if}" href="./adminDisco">Cargar Discos</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./administradorCanciones">Cargar Canciones</a>
+    <a class="nav-link {if $seccion=="adminCancion"}active{/if}" href="./adminCanciones">Cargar Canciones</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="./logout">Salir</a>

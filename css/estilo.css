@@ -1,8 +1,4 @@
-BODY {
-  padding:0;
-  margin:60px 0 0 0;
-  font-family: sans-serif;
-}
+
 #titulo{
   margin:30px;
 }
@@ -18,10 +14,17 @@ BODY {
 .tituloIndex{
   font-family:
 }
-
+.prueba{
+  color:blue;
+}
 .tablaCancion{
-  width: 400px;
-  margin: 20px;
+  background-color: blue;
+  border: 2px solid gray;
+  width: auto;
+  height: auto;
+  border: 2px solid gray;
+  margin: 10px
+
 }
 .barraPrincipal{
   padding: 10px;

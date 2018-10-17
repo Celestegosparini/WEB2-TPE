@@ -1,4 +1,4 @@
-{include file="header.tpl" seccion="canciones"}
+{include file="header.tpl" seccion="cancionesPorDisco"}
 
 <div class="tablaCancion">
   <h1 class="tituloIndex">{$titulo}</h1>
@@ -6,13 +6,16 @@
     <thead>
    <tr>
     <th scope="col">Nombre</th>
+    <th scope="col">Disco</th>
+
    </tr>
    </thead>
  <tbody>
   {foreach from=$canciones item=cancion}
     <tr>
       <td>{$cancion['nombreCancion']}</td>
-      <td><a href="./verCancion/{$cancion['idCancion']}">Ver más</a></td>
+      <td>{$cancion['idDisco']}</td>
+
      </tr>
   {/foreach}
 

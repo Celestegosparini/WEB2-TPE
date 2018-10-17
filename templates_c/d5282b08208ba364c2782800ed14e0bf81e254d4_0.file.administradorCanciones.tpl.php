@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-16 14:32:54
+/* Smarty version 3.1.33, created on 2018-10-17 16:52:03
   from 'C:\xampp\htdocs\WEB2-TPE\templates\administradorCanciones.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bc5da7697bd74_74953273',
+  'unifunc' => 'content_5bc74c9382aa06_55866819',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd5282b08208ba364c2782800ed14e0bf81e254d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\WEB2-TPE\\templates\\administradorCanciones.tpl',
-      1 => 1539632203,
+      1 => 1539787913,
       2 => 'file',
     ),
   ),
@@ -22,11 +22,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5bc5da7697bd74_74953273 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_subTemplateRender("file:headerRegistrado.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+function content_5bc74c9382aa06_55866819 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender("file:headerRegistrado.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('seccion'=>"adminCancion"), 0, false);
 ?>
 <div class="tablaCancion">
-<table class="table table-dark" class="tablaCancion">
+<table class="table table-dark">
 <thead>
 <tr>
   <th scope="col">Nombre</th>
@@ -51,9 +51,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['cancion']->value) {
 </td>
       <td><?php echo $_smarty_tpl->tpl_vars['cancion']->value['idDisco'];?>
 </td>
-      <td><a href="./borrarCancion/<?php echo $_smarty_tpl->tpl_vars['cancion']->value['id'];?>
+      <td><a href="borrarCancion/<?php echo $_smarty_tpl->tpl_vars['cancion']->value['id'];?>
 ">BORRAR</a></td>
-      <td><a href="./editarCancion/<?php echo $_smarty_tpl->tpl_vars['cancion']->value['id'];?>
+      <td><a href="editarCancion/<?php echo $_smarty_tpl->tpl_vars['cancion']->value['id'];?>
 ">BORRAR</a></td>
      </tr>
   <?php
