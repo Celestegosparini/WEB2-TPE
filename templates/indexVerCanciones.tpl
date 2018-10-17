@@ -1,8 +1,5 @@
 {include file="header.tpl" seccion="canciones"}
 
-<div class="tablaCancion">
-  <p>hkjkjjk</p>
-  </div>
   <h1 class="tituloIndex">{$titulo}</h1>
    <table class="table table-dark">
     <thead>

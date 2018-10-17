@@ -3,7 +3,7 @@
 
 <div class="tablaCancion">
 
-  <h1 class="tituloIndex">{$home}</h1>
+  <h1 class="tituloIndex">{$titulo}</h1>
    <table class="table table-dark">
     <thead>
    <tr>
