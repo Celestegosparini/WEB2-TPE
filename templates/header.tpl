@@ -11,7 +11,6 @@
 
   </head>
   <body>
-    <div class="barraPrincipal">
     <ul class="nav nav-pills nav-fill">
       <li class="nav-item">
         <a class="nav-link {if $seccion=="canciones"}active{/if}" href="canciones">Canciones</a>
