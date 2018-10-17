@@ -64,7 +64,7 @@ function getDiscos(){
   function editarDisco($param){
       $idDisco = $param[0];
       $disco = $this->discoModel->getDiscoId($idDisco);
-      $this->view-> mostrarEditarDisco("Editar Disco", $disco);
+      $this->view->mostrarEditarDisco("Editar Disco", $disco);
   }
 
   function guardarEditarDisco(){

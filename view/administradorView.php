@@ -25,7 +25,7 @@
    }
    function mostrarEditarDisco($titulo,$disco){
       $this->Smarty->assign('titulo',$titulo); // El 'Titulo' del assign puede ser cualquier valor
-      $this->Smarty->assign('disco',$disco);
+      $this->Smarty->assign('disco',$disco[0]);
       $this->Smarty->assign('./editarDisco',"http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]));
       $this->Smarty->display('templates/editarDisco.tpl');
     }
