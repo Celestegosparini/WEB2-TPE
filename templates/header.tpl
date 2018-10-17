@@ -12,18 +12,8 @@
   </head>
   <body>
     <ul class="nav nav-pills nav-fill">
-      <li class="nav-item">
-        <a class="nav-link {if $seccion=="canciones"}active{/if}" href="{$home}/canciones">Canciones</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link {if $seccion=="discos"}active{/if}" href="{$home}/discos">Discos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link {if $seccion=="cancionesPorDisco"}active{/if}" href="{$home}/cancionesPorDisco">Canciones por Disco</a>
-      </li>
-  <li class="nav-item">
-    <a class="nav-link {if $seccion=="login"}active{/if}" href="{$home}/login">Ingresar</a>
-  </li>
-</div>
-
-</ul>
+      {include file="headerMenu.tpl"}
+      {if isset($smarty.session.usuario)}
+          {include file="headerMenuRegistrado.tpl"}
+      {/if}
+    </ul>

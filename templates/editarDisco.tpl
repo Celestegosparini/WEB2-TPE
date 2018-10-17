@@ -1,6 +1,4 @@
-{include file="headerRegistrado.tpl" seccion="adminDisco"}
-
-
+{include file="header.tpl" seccion="adminDisco"}
     <div class="container">
       <h2>Formulario</h2>
       <form method="post" action="{$home}/guardarEditarDisco/{$disco['id']}">

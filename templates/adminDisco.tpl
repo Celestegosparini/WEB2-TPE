@@ -1,5 +1,5 @@
 
-{include file="headerRegistrado.tpl" seccion="adminDisco"}
+{include file="header.tpl" seccion="adminDisco"}
 
 
 

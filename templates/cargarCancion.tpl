@@ -1,5 +1,5 @@
 <div class="divPrincipal">
-{include file="headerRegistradoCancion.tpl"}
+{include file="header.tpl"}
 
 <div class="tablaCancion">
 <table class="table table-dark" class="tablaCancion">

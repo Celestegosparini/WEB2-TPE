@@ -1,4 +1,4 @@
-{include file="headerRegistrado.tpl" seccion="adminCancion"}
+{include file="header.tpl" seccion="adminCancion"}
 <p class="prueba">prueva</p>
 <div class="tablaCancion">
 <table class="table table-dark">
