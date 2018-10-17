@@ -1,4 +1,5 @@
-{include file="header.tpl"}
+
+  {include file="header.tpl"}
 
   <h1 class="tituologin">{$Titulo}</h1>
 

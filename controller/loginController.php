@@ -36,7 +36,7 @@ class loginController
         session_start();
         $_SESSION["usuario"] = $usuario;
 
-        header(HOME);
+        header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "/administrador");
       }else{
           $this->view->mostrarLogin("Contraeña invalida");
       }

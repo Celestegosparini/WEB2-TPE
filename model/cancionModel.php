@@ -13,9 +13,15 @@ class cancionModel
     , 'root', '');
   }
 
-  function getCancion(){
+  function getCanciones(){
       $sentencia = $this->db->prepare( "select * from cancion");
       $sentencia->execute();
+      return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+  }
+
+  function getCancionId($idCancion){
+      $sentencia = $this->db->prepare( "select * from cancion where idCancion=?");
+      $sentencia->execute(array($idCancion));
       return $sentencia->fetchAll(PDO::FETCH_ASSOC);
   }
 

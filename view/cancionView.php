@@ -14,7 +14,7 @@
      $smarty->assign('Titulo',$Titulo);
      $smarty->assign('Canciones',$Canciones);
      $smarty->assign('Discos',$Discos);
-     $smarty->display('templates/homeCancion.tpl');
+     $smarty->display('templates/canciones.tpl');
    }
  }
  ?>

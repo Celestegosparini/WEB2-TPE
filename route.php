@@ -1,7 +1,10 @@
 <?php
 require_once "config/ConfigApp.php";
 require_once "controller\discoController.php";
+require_once "controller\administradorController.php";
 require_once "controller\cancionController.php";
+require_once "controller\cancionLoginController.php";
+require_once "controller\indexController.php";
 require_once "controller\loginController.php";
 require_once "controller\secureController.php";
 require_once "controller\usuarioController.php";

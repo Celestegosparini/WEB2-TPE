@@ -1,4 +1,4 @@
-<?php
+  <?php
 /**
  *
  */
@@ -13,21 +13,34 @@ class DiscoModel
     , 'root', '');
   }
 
-  function GetDiscos(){
+  function getDiscos(){
       $sentencia = $this->db->prepare( "select * from disco");
       $sentencia->execute();
       return $sentencia->fetchAll(PDO::FETCH_ASSOC);
   }
+  function getDiscoId($idDisco){
+      $sentencia = $this->db->prepare( "select * from disco where id=?");
+      $sentencia->execute(array($idDisco));
+      return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+  }
+  function guardarEditarDisco($nombre,$precio,$id){
+  $sentencia = $this->db->prepare( "update disco set nombre =?, precio =?, where id=?");
+  $sentencia->execute(array($nombre,$precio,$id));
+}
 
-  function InsertDisco($nombre,$precio){
+
+  function insertDisco($nombre,$precio){
     $sentencia = $this->db->prepare("INSERT INTO disco(nombre,precio) VALUES(?,?)");
     $sentencia->execute(array($nombre,$precio));
   }
 
-  function BorrarDisco($idDisco){
+  function borrarDiscoId($idDisco){
+
 
     $sentencia = $this->db->prepare( "delete from disco where id=?");
     $sentencia->execute(array($idDisco));
+    print_r($sentencia);
+    
   }
 
 }

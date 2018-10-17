@@ -1,6 +1,6 @@
 <?php
 
-require_once "./view/discoView.php";
+
 require_once "./model/discoModel.php";
 require_once "secureController.php";
 

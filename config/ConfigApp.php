@@ -9,15 +9,37 @@ class ConfigApp
     public static $ACTION = 'action';
     public static $PARAMS = 'params';
     public static $ACTIONS = [
-      ''=> 'discoController#Home',
+      ''=> 'indexController#verCanciones',
+      'canciones'=> 'indexController#verCanciones',
+      'discos'=> 'indexController#verDiscos',
+      'cancion'=> 'indexController#verCancion',
+      'cancionesPorDisco'=> 'indexController#verCancionesPorDisco',
+      'verCancion'=> 'indexController#verCancion',
+      'login'=> 'loginController#login',
+      'verificarLogin'=> 'loginController#verificarLogin',
+      'logout'=> 'loginController#logout',
+      'administrador'=> 'administradorController#getDiscos',
+      'administradorCanciones'=> 'administradorController#getCanciones',
+      'agregarCancion'=> 'administradorController#insertCancion',
+      'agregarDisco'=> 'administradorController#insertDisco',
+      'borrarCancion'=> 'administradorController#borrarCancion',
+      'borrarDisco'=> 'administradorController#borrarDisco',
+      'editarCancion'=> 'administradorController#editarCancion',
+      'editarDisco'=> 'administradorController#editarDisco',
+      'guardarEditarDisco'=> 'administradorController#guardarEditarDisco',
+      'guardarEditarCancion'=> 'administradorController#guardarEditarCancion',
+
+      /*
       'home'=> 'discoController#Home',
-      'homeCancion'=> 'cancionController#HomeCancion',
+      'canciones'=> 'cancionController#HomeCancion',
+      'ver'=> 'cancionController#cancion',
       'agregar'=> 'discoController#InsertDisco',
-      'agregarCancion'=> 'cancionController#InsertCancion',
+      'cargarCancion'=> 'cancionLoginController#HomeCancion',
+      'agregarCancion'=> 'cancionLoginController#InsertCancion',
       'borrarCancion'=> 'cancionController#BorrarCancion',
       'login'=> 'loginController#login',
       'logout'=> 'loginController#logout',
-      'verificarLogin'=> 'loginController#verificarLogin'
+      */
     ];
 
 }

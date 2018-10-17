@@ -1,32 +1,33 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-10 23:11:26
+/* Smarty version 3.1.33, created on 2018-10-12 17:25:13
   from 'C:\xampp\htdocs\WEB2-TPE\templates\home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bbe6afe104221_98016388',
+  'unifunc' => 'content_5bc0bcd95eeb39_82874776',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3ab80943cac706677af4a632910561ea86d2e59a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\WEB2-TPE\\templates\\home.tpl',
-      1 => 1539200035,
+      1 => 1539357878,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
-    'file:header.tpl' => 1,
+    'file:headerRegistrado.tpl' => 1,
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5bbe6afe104221_98016388 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+function content_5bc0bcd95eeb39_82874776 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="divPrincipal">
+<?php $_smarty_tpl->_subTemplateRender("file:headerRegistrado.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
-    <table class="table table-dark" id="tablaDisco">
+    <table class="table table-dark" class="tablaDisco">
   <thead>
     <tr>
       <th scope="col">Nombre</th>
@@ -35,8 +36,6 @@ $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_sm
     </tr>
   </thead>
   <tbody>
-
-
       <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['Discos']->value, 'disco');
 if ($_from !== null) {
@@ -57,8 +56,6 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
   </tbody>
 </table>
-
-
     <div class="container">
       <h2>Cargar Disco</h2>
       <form method="post" action="agregar">
@@ -74,9 +71,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
       </form>
     </div>
 
-  
-
-
 <?php $_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-}
+?>
+</div>
+<?php }
 }
