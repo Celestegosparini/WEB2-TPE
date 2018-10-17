@@ -14,13 +14,13 @@
     <div class="barraPrincipal">
     <ul class="nav nav-pills nav-fill">
   <li class="nav-item">
-    <a class="nav-link {if $seccion=="adminDisco"}active{/if}" href="./adminDisco">Cargar Discos</a>
+    <a class="nav-link {if $seccion=="adminDisco"}active{/if}" href="{$home}/adminDisco">Cargar Discos</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link {if $seccion=="adminCancion"}active{/if}" href="./adminCanciones">Cargar Canciones</a>
+    <a class="nav-link {if $seccion=="adminCancion"}active{/if}" href="{$home}/adminCanciones">Cargar Canciones</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./logout">Salir</a>
+    <a class="nav-link" href="{$home}/logout">Salir</a>
   </li>
 </div>
 
