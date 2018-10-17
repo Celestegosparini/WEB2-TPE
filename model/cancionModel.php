@@ -25,7 +25,7 @@ class cancionModel
   }
 
   function getCancionId($idCancion){
-      $sentencia = $this->db->prepare( "select * from cancion where idCancion=?");
+      $sentencia = $this->db->prepare( "SELECT * FROM cancion, disco WHERE idCancion=? AND cancion.idDisco = disco.id");
       $sentencia->execute(array($idCancion));
       return $sentencia->fetchAll(PDO::FETCH_ASSOC);
   }
