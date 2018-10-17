@@ -8,9 +8,9 @@ class UsuarioView
 
   function Mostrar($Titulo, $Usuarios){
     $smarty = new Smarty();
-    $smarty->assign('Titulo',$Titulo); // El 'Titulo' del assign puede ser cualquier valor
+    $smarty->assign('Titulo',$Titulo);
     $smarty->assign('Usuarios',$Usuarios);
-    //$smarty->debugging = true;
+    $smarty->assign('home',"http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]));
     $smarty->display('templates/MostrarUsuarios.tpl');
   }
 }

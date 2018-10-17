@@ -1,5 +1,5 @@
 
-{include file="header.tpl"}
+{include file="header.tpl" seccion="canciones"}
 
 <div class="tablaCancion">
 
@@ -13,12 +13,11 @@
    </tr>
    </thead>
  <tbody>
-  {foreach from=$Cancion item=cancion}
+  {foreach from=$cancion item=c}
     <tr>
-      <td>{$cancion['nombreCancion']}</td>
-      <td>{$cancion['duracion']}</td>
-      <td>{$cancion['idDisco']}</td>
-
+      <td>{$c['nombreCancion']}</td>
+      <td>{$c['duracion']}</td>
+      <td>{$c['idDisco']}</td>
      </tr>
   {/foreach}
 
