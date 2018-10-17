@@ -70,10 +70,10 @@ function getDiscos(){
   function guardarEditarDisco(){
     $nombre = $_POST["nombreFormDisco"];
     $precio = $_POST["precioFormDisco"];
-    $idDisco = $_POST["idNombreFormDisco"];
+    $idDisco = $_POST["idFormEditarDisco"];
     $this->discoModel->guardarEditarDisco($nombre,$precio,$idDisco);
 
-    header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]));
+    header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "/adminDisco");
   }
 
 }

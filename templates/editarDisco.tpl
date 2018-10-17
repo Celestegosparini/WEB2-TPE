@@ -1,9 +1,9 @@
-{include file="headerRegistrado.tpl"}
+{include file="headerRegistrado.tpl" seccion="adminDisco"}
 
 
     <div class="container">
       <h2>Formulario</h2>
-      <form method="post" action="./guardarEditarDisco">
+      <form method="post" action="{$home}/guardarEditarDisco/{$disco['id']}">
         <input type="hidden" class="form-control" id="idFormEditarDisco" name="idFormEditarDisco" value="{$disco['id']}">
         <div class="form-group">
           <label for="nombreForm">Nombre</label>

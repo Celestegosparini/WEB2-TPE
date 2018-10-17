@@ -23,10 +23,11 @@ class DiscoModel
       $sentencia->execute(array($idDisco));
       return $sentencia->fetchAll(PDO::FETCH_ASSOC);
   }
+
   function guardarEditarDisco($nombre,$precio,$id){
-  $sentencia = $this->db->prepare( "update disco set nombre =?, precio =?, where id=?");
+  $sentencia = $this->db->prepare( "UPDATE disco set nombre=?, precio=? WHERE id=?");
   $sentencia->execute(array($nombre,$precio,$id));
-}
+  }
 
 
   function insertDisco($nombre,$precio){
@@ -40,7 +41,7 @@ class DiscoModel
     $sentencia = $this->db->prepare( "delete from disco where id=?");
     $sentencia->execute(array($idDisco));
     print_r($sentencia);
-    
+
   }
 
 }

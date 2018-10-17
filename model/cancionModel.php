@@ -14,12 +14,12 @@ class cancionModel
   }
 
   function getCanciones(){
-      $sentencia = $this->db->prepare( "select * from cancion");
+      $sentencia = $this->db->prepare( "SELECT * FROM cancion, disco WHERE cancion.idDisco = disco.id");
       $sentencia->execute();
       return $sentencia->fetchAll(PDO::FETCH_ASSOC);
   }
   function getCancionesPorDiscos(){
-      $sentencia = $this->db->prepare( "select * from cancion order by idDisco asc");
+      $sentencia = $this->db->prepare( "SELECT * from cancion, disco WHERE cancion.idDisco = disco.id ORDER BY idDisco ASC");
       $sentencia->execute();
       return $sentencia->fetchAll(PDO::FETCH_ASSOC);
   }

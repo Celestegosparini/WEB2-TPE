@@ -14,7 +14,7 @@
   {foreach from=$canciones item=cancion}
     <tr>
       <td>{$cancion['nombreCancion']}</td>
-      <td>{$cancion['idDisco']}</td>
+      <td>{$cancion['nombre']}</td>
 
      </tr>
   {/foreach}

@@ -5,12 +5,14 @@
     <thead>
    <tr>
     <th scope="col">Nombre</th>
+    <th scope="col">Disco</th>
    </tr>
    </thead>
  <tbody>
   {foreach from=$canciones item=cancion}
     <tr>
       <td>{$cancion['nombreCancion']}</td>
+      <td>{$cancion['nombre']}</td>
       <td><a href="./verCancion/{$cancion['idCancion']}">Ver más</a></td>
      </tr>
   {/foreach}
