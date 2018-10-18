@@ -1,6 +1,4 @@
 {include file="header.tpl" seccion="adminCancion"}
-<p class="prueba">prueva</p>
-<div class="tablaCancion">
 <table class="table table-dark">
 <thead>
 <tr>
@@ -18,9 +16,9 @@
     <tr>
       <td>{$cancion['nombreCancion']}</td>
       <td>{$cancion['duracion']}</td>
-      <td>{$cancion['idDisco']}</td>
-      <td><a href="borrarCancion/{$cancion['id']}">BORRAR</a></td>
-      <td><a href="editarCancion/{$cancion['id']}">BORRAR</a></td>
+      <td>{$cancion['nombre']}</td>
+      <td><a href="borrarCancion/{$cancion['idCancion']}">Borrar</a></td>
+      <td><a href="editarCancion/{$cancion['idCancion']}">Editar</a></td>
      </tr>
   {/foreach}
 
@@ -36,11 +34,11 @@
           <input type="text" class="form-control" id="nombreCancionForm" name="nombreCancionForm">
         </div>
         <div class="form-group">
-          <label for="descripcionForm">Duracion</label>
+          <label for="duracionForm">Duracion</label>
           <input type="text" class="form-control" id="duracionForm" name="duracionForm">
         </div>
         <div class="form-group">
-          <label for="descripcionForm">Disco</label>
+          <label for="idDiscoForm">Disco</label>
           <select class="form-control" id="idDiscoForm" name="idDiscoForm">
   {foreach from=$Discos item=disco}
       <option value="{$disco['id']}"> {$disco['nombre']}</option>
@@ -50,5 +48,5 @@
         </div>
         <button type="submit" class="btn btn-primary">Cargar Cancion</button>
       </form>
-    </div>
+
 {include file="footer.tpl"}

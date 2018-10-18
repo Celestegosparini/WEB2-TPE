@@ -13,8 +13,8 @@
      $smarty = new Smarty();
      $smarty->assign('titulo',$titulo);
      $smarty->assign('canciones',$canciones);
-      $smarty->assign('Discos',$Discos);
-      $smarty->assign('home',"http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]));
+     $smarty->assign('Discos',$Discos);
+     $smarty->assign('home',"http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]));
      $smarty->display('templates/adminCanciones.tpl');
    }
 
@@ -31,10 +31,10 @@
       $this->Smarty->assign('home',"http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]));
       $this->Smarty->display('templates/editarDisco.tpl');
     }
-    function mostrarEditarCancion($titulo, $cancion){
-
+    function mostrarEditarCancion($titulo, $cancion,$Discos){
        $this->Smarty->assign('titulo',$titulo);
-       $this->Smarty->assign('cancion',$cancion);
+       $this->Smarty->assign('Discos',$Discos);
+       $this->Smarty->assign('cancion',$cancion[0]);
        $this->Smarty->assign('home',"http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]));
        $this->Smarty->display('templates/editarCancion.tpl');
      }

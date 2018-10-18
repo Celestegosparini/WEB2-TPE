@@ -18,6 +18,11 @@ class cancionModel
       $sentencia->execute();
       return $sentencia->fetchAll(PDO::FETCH_ASSOC);
   }
+  function getCancion($idCancion){
+      $sentencia = $this->db->prepare( "select * from cancion where idCancion=?");
+      $sentencia->execute(array($idCancion));
+      return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+  }
   function getCancionesPorDiscos(){
       $sentencia = $this->db->prepare( "SELECT * from cancion, disco WHERE cancion.idDisco = disco.id ORDER BY idDisco ASC");
       $sentencia->execute();
@@ -35,10 +40,15 @@ class cancionModel
     echo $sentencia->execute(array($nombre,$duracion,$idDisco));
   }
 
-  function borrarCancion($idCancion){
+  function borrarCancionId($idCancion){
 
-    $sentencia = $this->db->prepare( "delete from cancion where id=?");
+    $sentencia = $this->db->prepare( "delete from cancion where idCancion=?");
     $sentencia->execute(array($idCancion));
+  }
+
+  function guardarEditarCancion($nombreCancion,$duracion,$idCancion, $idDisco){
+  $sentencia = $this->db->prepare( "UPDATE cancion set nombreCancion=?, duracion=?, idDisco=? WHERE idCancion=?");
+  $sentencia->execute(array($nombreCancion,$duracion,$idDisco,$idCancion));
   }
 
 }

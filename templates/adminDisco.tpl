@@ -3,7 +3,7 @@
 
 
 
-    <table class="table table-dark" class="tablaDisco">
+    <table class="table table-dark">
   <thead>
     <tr>
       <th scope="col">Nombre</th>

@@ -36,8 +36,6 @@ class DiscoModel
   }
 
   function borrarDiscoId($idDisco){
-
-
     $sentencia = $this->db->prepare( "delete from disco where id=?");
     $sentencia->execute(array($idDisco));
     print_r($sentencia);

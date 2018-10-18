@@ -6,6 +6,7 @@
    <tr>
     <th scope="col">Nombre</th>
     <th scope="col">Disco</th>
+    <th scope="col">Detalle</th>
    </tr>
    </thead>
  <tbody>
