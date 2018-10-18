@@ -14,10 +14,9 @@
         <div class="form-group">
          <label for="idDiscoFormEditarCancion">Disco</label>
          <select class="form-control" id="idDiscoFormEditarCancion" name="idDiscoFormEditarCancion">
- {foreach from=$Discos item=disco}
-     <option value="{$disco['id']}"> {$disco['nombre']}</option>
- {/foreach}
-
+         {foreach from=$Discos item=disco}
+             <option value="{$disco['id']}" {if $disco['id'] == $cancion['idDisco']}selected="selected"{/if}> {$disco['nombre']}</option>
+         {/foreach}
        </select>
     </div>
 
