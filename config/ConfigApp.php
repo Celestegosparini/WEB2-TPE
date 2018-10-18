@@ -29,18 +29,6 @@ class ConfigApp
       'editarDisco'=> 'administradorController#editarDisco',
       'guardarEditarDisco'=> 'administradorController#guardarEditarDisco',
       'guardarEditarCancion'=> 'administradorController#guardarEditarCancion',
-
-      /*
-      'home'=> 'discoController#Home',
-      'canciones'=> 'cancionController#HomeCancion',
-      'ver'=> 'cancionController#cancion',
-      'agregar'=> 'discoController#InsertDisco',
-      'cargarCancion'=> 'cancionLoginController#HomeCancion',
-      'agregarCancion'=> 'cancionLoginController#InsertCancion',
-      'borrarCancion'=> 'cancionController#BorrarCancion',
-      'login'=> 'loginController#login',
-      'logout'=> 'loginController#logout',
-      */
     ];
 
 }

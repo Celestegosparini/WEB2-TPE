@@ -33,7 +33,7 @@ class loginController
       if (password_verify($pass,$dbUser[0]['pass'])){
         session_start();
         $_SESSION["usuario"] = $usuario;
-        header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "/administrador");
+        header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "/adminDisco");
       }else{
           $this->view->mostrarLogin("Contraseña invalida");
       }

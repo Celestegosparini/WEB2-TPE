@@ -37,7 +37,7 @@ function getDiscos(){
     $duracion = $_POST["duracionForm"];
     $disco = $_POST["idDiscoForm"];
     $this->cancionModel->insertCancion($nombre,$duracion,$disco);
-    header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "/administradorCanciones");
+    header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "/adminCanciones");
   }
 
   function insertDisco(){
@@ -46,7 +46,7 @@ function getDiscos(){
     $precio = $_POST["precioForm"];
      $this->discoModel->insertDisco($nombre,$precio);
 
-    header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "./administrador");
+    header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "./adminDisco");
   }
 
   function borrarDisco($param){
@@ -56,7 +56,7 @@ function getDiscos(){
 
   function borrarCancion($param){
     $this->cancionModel->borrarCancionId($param[0]);
-    header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "./adminCancion");
+    header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "./adminCanciones");
   }
 
   function editarDisco($param){
@@ -86,7 +86,7 @@ function getDiscos(){
     $idDisco = $_POST["idDiscoFormEditarCancion"];
     $this->cancionModel->guardarEditarCancion($nombre,$duracion,$idCancion,$idDisco);
 
-    header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "/adminCancion");
+    header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "/adminCanciones");
   }
 
 }

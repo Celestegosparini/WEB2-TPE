@@ -31,8 +31,7 @@ if(isset($_REQUEST['action'])){
             echo $controller->$metodo();
         }
     }else{
-      $controller =  new administradorController();
-      echo $controller->getDiscos();
+      header(HOME);
     }
 }
  ?>
