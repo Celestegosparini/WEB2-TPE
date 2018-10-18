@@ -11,7 +11,7 @@
     }
    function mostrarLogin($mensaje =''){
      $smarty = new Smarty();
-     $smarty->assign('Titulo','Login');
+     $smarty->assign('titulo','Login');
      $smarty->assign('mensaje',$mensaje);
      $smarty->assign('home',"http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]));
      $smarty->display('templates/login.tpl');

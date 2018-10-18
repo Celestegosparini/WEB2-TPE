@@ -1,6 +1,14 @@
 {include file="header.tpl" seccion="adminCancion"}
     <div class="container">
-      <h2>Formulario</h2>
+      <div class="row">
+        <div class="col-12">
+          <hr/>
+           <h2 class="tituloIndex">Editar canción: {$cancion['nombreCancion']}</h2>
+          <hr/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
       <form method="post" action="{$home}/guardarEditarCancion/{$cancion['idCancion']}">
         <input type="hidden" class="form-control" id="idFormEditarCancion" name="idFormEditarCancion" value="{$cancion['idCancion']}">
         <div class="form-group">
@@ -19,8 +27,9 @@
          {/foreach}
        </select>
     </div>
-
         <button type="submit" class="btn btn-primary">Editar Cancion</button>
       </form>
+     </div>
     </div>
+  </div>
 {include file="footer.tpl"}

@@ -1,27 +1,24 @@
 
 {include file="header.tpl" seccion="canciones"}
-
-
-  <h1 class="tituloIndex">{$titulo}</h1>
-   <table class="table table-dark">
-    <thead>
-   <tr>
-    <th scope="col">Nombre</th>
-    <th scope="col">Duracion</th>
-    <th scope="col">Disco</th>
-    <th scope="col">Precio del Disco</th>
-   </tr>
-   </thead>
- <tbody>
-  {foreach from=$cancion item=$c}
-    <tr>
-      <td>{$c['nombreCancion']}</td>
-      <td>{$c['duracion']}</td>
-      <td>{$c['nombre']}</td>
-      <td>{$c['precio']}</td>
-     </tr>
-  {/foreach}
-
-</tbody>
-   </table>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <hr/>
+       <h1 class="tituloIndex">Detalle de la canción: {$cancion[0]['nombreCancion']}</h1>
+      <hr/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group">
+          {foreach from=$cancion item=$c}
+     <li class="list-group-item">Nombre: {$c['nombreCancion']}</li>
+     <li class="list-group-item">Duracion: {$c['duracion']}</li>
+     <li class="list-group-item">Disco: {$c['nombre']}</li>
+     <li class="list-group-item">Precio: ${$c['precio']} </li>
+     {/foreach}
+    </ul>
+    </div>
+  </div>
+</div>
 {include file="footer.tpl"}
