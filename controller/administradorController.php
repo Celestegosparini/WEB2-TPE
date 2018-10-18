@@ -46,17 +46,17 @@ function getDiscos(){
     $precio = $_POST["precioForm"];
      $this->discoModel->insertDisco($nombre,$precio);
 
-    header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "./adminDisco");
+    header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "/adminDisco");
   }
 
   function borrarDisco($param){
     $this->discoModel->borrarDiscoId($param[0]);
-    header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "./adminDisco");
+    header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "/adminDisco");
   }
 
   function borrarCancion($param){
     $this->cancionModel->borrarCancionId($param[0]);
-    header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "./adminCanciones");
+    header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]) . "/adminCanciones");
   }
 
   function editarDisco($param){

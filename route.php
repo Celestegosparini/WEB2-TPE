@@ -1,10 +1,10 @@
 <?php
 require_once "config/ConfigApp.php";
-require_once "controller\administradorController.php";
-require_once "controller\indexController.php";
-require_once "controller\loginController.php";
-require_once "controller\secureController.php";
-require_once "controller\usuarioController.php";
+require_once "controller/administradorController.php";
+require_once "controller/indexController.php";
+require_once "controller/loginController.php";
+require_once "controller/secureController.php";
+require_once "controller/usuarioController.php";
 function parseURL($url)
 {
   $urlExploded = explode('/', $url);
