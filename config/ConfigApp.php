@@ -3,6 +3,7 @@ define('HOME','Location: http://'.$_SERVER["SERVER_NAME"] . dirname($_SERVER["PH
 define('LOGIN','Location: http://'.$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]). '/login');
 define('LOGOUT','Location: http://'.$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]). '/logout');
 
+session_start();
 
 class ConfigApp
 {
