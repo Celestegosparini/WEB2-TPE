@@ -2,7 +2,7 @@
 require_once "./view/administradorView.php";
 require_once "./model/cancionModel.php";
 require_once "./model/discoModel.php";
-require_once "/secureController.php";
+require_once "secureController.php";
 
 class administradorController extends secureController
 {
